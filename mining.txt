@@ -1,0 +1,8 @@
+DO()
+WAIT(60)
+ECHO("/sell cobblestone")
+WAIT(60)
+ECHO("/sell gravel")
+WAIT(60)
+ECHO("/sell dirt")
+LOOP()

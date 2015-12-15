@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://eq2online.net/dtd/properties.dtd">
+<properties>
+    <comment>Shared variables store for mod_Macros</comment>
+    <entry key="&amp;region">buildtopia</entry>
+    <entry key="#region">0</entry>
+    <entry key="#pump">0</entry>
+    <entry key="&amp;world">rising</entry>
+    <entry key="#lottowin">0</entry>
+    <entry key="trade_breaknow">0</entry>
+    <entry key="&amp;owner">Owner: ScarabCoder (012ca32d-ad51-4f34-b68c-7b69a7960bac) </entry>
+    <entry key="test">0</entry>
+    <entry key="#filterm">0</entry>
+    <entry key="#where">0</entry>
+    <entry key="tradead">0</entry>
+    <entry key="&amp;timeleft">7 minutes, and 21 seconds</entry>
+    <entry key="#blockchat">0</entry>
+    <entry key="#alot">0</entry>
+    <entry key="&amp;tempam">3</entry>
+    <entry key="&amp;tradead2">$100 for every player you give an apartment to</entry>
+    <entry key="&amp;tradead1">Apply for staff of Builder Getting Started now! http://tinyurl.com/h6cgyrm</entry>
+    <entry key="#tixamount">0</entry>
+    <entry key="#mb">0</entry>
+    <entry key="&amp;vars">abpizza,AdmiralD,agentplutonium,alex101911,AlexGIF,Andiesis,BalisticVin,Bernt_Toast,BuildsByGideon,ceskykure,icecream0886,j90rdn,Janelle5845,KEVINwelch2001,lucasmay11,MasterPharom,Moonotter701,Obblebobble,Roanmara,ScarabCoder,Sickidd,Strechies,twingirlaimee</entry>
+    <entry key="&amp;testing">hih</entry>
+    <entry key="&amp;time"/>
+    <entry key="testing">0</entry>
+    <entry key="#i">0</entry>
+    <entry key="#one">1</entry>
+    <entry key="#break">1</entry>
+    <entry key="#world">0</entry>
+    <entry key="&amp;tickamount">1</entry>
+    <entry key="#counton">0</entry>
+    <entry key="&amp;type">chest</entry>
+    <entry key="#blocklwc">0</entry>
+    <entry key="#lotto">1</entry>
+    <entry key="#rg">0</entry>
+    <entry key="#slot">2</entry>
+    <entry key="#click">0</entry>
+    <entry key="#counting">0</entry>
+    <entry key="#afk">1</entry>
+    <entry key="#trade_time">180</entry>
+    <entry key="#block2">0</entry>
+    <entry key="#trade_failsafe">0</entry>
+    <entry key="&amp;one">one</entry>
+    <entry key="#counter">855</entry>
+    <entry key="false">0</entry>
+    <entry key="#cinfo">0</entry>
+    <entry key="&amp;vars1">Members:abpizza,AdmiralD,agentplutonium,alex101911,AlexGIF,Andiesis,BalisticVin,Bernt_Toast,BuildsByGideon,ceskykure,icecream0886,j90rdn,Janelle5845,KEVINwelch2001,lucasmay11,MasterPharom,Moonotter701,Obblebobble,Roanmara,ScarabCoder,Sickidd,Strechies,twingirlaimee</entry>
+    <entry key="&amp;tixamount">= 5</entry>
+    <entry key="mycounter">0</entry>
+</properties>

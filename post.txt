@@ -1,0 +1,3 @@
+$${
+placesign("Darnassus","Post","X %XPOS%","Z %ZPOS%",true)
+}$$

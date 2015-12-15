@@ -1,0 +1,10 @@
+IF(HUNGER < 15)
+LOG(&4You should probably eat something...)
+playsound(mob.villager.no)
+@#slot = %INVSLOT%
+pick("baked_potato")
+do(40)
+key(use)
+loop()
+slot(%@#slot%)
+ENDIF()

@@ -1,0 +1,6 @@
+do()
+if(@#pump == 1)
+echo("/sell pumpkin")
+wait(60)
+endif()
+loop()

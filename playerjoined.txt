@@ -1,0 +1,1 @@
+LOG("%JOINEDPLAYER% Joined the game")

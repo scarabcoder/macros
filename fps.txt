@@ -1,0 +1,8 @@
+DO()
+SETLABEL("fps", "FPS: " %FPS%)
+setlabel("ylevel", "Y: " %YPOS%)
+setlabel("block", %HITNAME%)
+
+
+
+LOOP()

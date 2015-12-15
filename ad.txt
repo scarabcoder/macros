@@ -1,0 +1,2 @@
+AD = "Looking for a nice place to stay? Buy 10x10 plots for $850 each, $150 cheaper!"
+ECHO("/ch tr")

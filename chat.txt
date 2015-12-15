@@ -1,0 +1,65 @@
+$${
+if(%KEYNAME% == "onSendChatMessage")
+ifcontains(%CHAT%, "/alot")
+set(@#filterm, 1)
+endif()
+if(%CHAT% == "/alot")
+
+
+log(&e---- &6Help: Automatic Lotto (page &c1 &6of &c1&6) &e----)
+log(&7&lMacro Developed by &5&lScarabCoder&7)
+log(&3/alot setdelay <time> &7- Sets the time in seconds before buying ticket(s) (default: 360 seconds))
+log(&3/alot enable/disable&7 - Disables or enables auto lottory (default: off))
+log(&3/alot setamount <amount> &7- Sets the amount of tickets to buy automatically (default: 1))
+endif()
+ifbeginswith(%CHAT%, "/alot setamount")
+@&tickamount = %CHAT%
+replace(@&tickamount, "/alot setamount ")
+log(&aSet the amount of tickets to auto-buy to &6%@&tickamount%) 
+endif()
+ifbeginswith(%CHAT%, "/alot setdelay")
+@&tempam = %CHAT%
+replace(@&tempam, "/alot setdelay ")
+
+log(&aTime before lotto ends before buying a ticket was set to %@&tempam%)
+endif()
+ifbeginswith(%CHAT%, "/alot enable")
+
+@#alot = 1
+log(&aYou will now buy tickets automagically)
+endif()
+ifbeginswith(%CHAT%, "/alot disable")
+@#alot = 0
+log(&aYou will no longer buy tickets automatically)
+endif()
+endif()
+if(%KEYNAME% == "onJoinGame")
+if(@#counting == 1)
+@#counting = 0
+@#counter = 855
+endif()
+DO()
+
+if(@#lottowin == 1)
+@#counting = 1
+@#lottowin = 0
+@#counter = 855
+endif()
+if(@#counting == 1)
+@#counter = @#counter - 1
+wait(20t)
+
+endif()
+endif()
+
+#correct = %@&tempam%
+if(#correct == @#counter)
+if(@#alot == 1)
+echo(/lot buy %@&tickamount%)
+endif()
+endif()
+
+LOOP()
+endif()
+
+}$$

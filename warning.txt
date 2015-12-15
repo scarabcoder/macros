@@ -1,0 +1,3 @@
+IF(DURABILITY < 50)
+    LOG("&4Warning! Your tool is almost broken!")
+ENDIF

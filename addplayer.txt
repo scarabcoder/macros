@@ -1,0 +1,7 @@
+$${
+if(%KEYNAME% == "MOUSE4")
+ECHO(/rg i)
+@#blockchat = 1
+endif()
+
+}$$

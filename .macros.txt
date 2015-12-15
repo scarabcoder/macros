@@ -1,0 +1,1031 @@
+#
+# macros.txt
+# This file stores the macro definitions, parameters and options for mod_macros
+#
+
+# Version number of the mod which saved this file. ***Do not alter this value!***
+version=1101
+
+#
+# Settings
+#
+
+autocraft.failed.popup=1
+
+# Set to 1 to enable the chat filter module
+chatfilter.enabled=1
+
+# True to enable custom (designable) GUI in the chat screen
+chatgui.enabled=1
+
+# Set this to the colour code format used by your server
+colourcodeformat=&%s
+
+# Use 0 to disable or -1 to use the MACRO OVERRIDE key
+colourcodehelperkey=0
+
+# Compiler flags, CASE SENSITIVE. Only change this if you know what you're doing
+compiler.flags=
+
+# Maximum number of file includes which can be inserted during a single compiler iteration
+compiler.maxincludes=10
+
+# Enable per-config friends list, setting this to 0 uses a single list for all configurations
+configs.enable.friends=0
+
+# Enable per-config homes list, setting this to 0 uses a single list for all configurations
+configs.enable.homes=0
+
+# Enable per-config places list, setting this to 0 uses a single list for all configurations
+configs.enable.places=0
+
+# Enable per-config presets list, setting this to 0 uses a single list for all configurations
+configs.enable.presets=0
+
+# Enable per-config towns list, setting this to 0 uses a single list for all configurations
+configs.enable.towns=0
+
+# Enable per-config warps list, setting this to 0 uses a single list for all configurations
+configs.enable.warps=0
+
+# Enables on-screen debugging information to help diagnose problems with the mod
+debug.enabled=0
+
+# Displays all environment variables on the HUD when debugging is enabled and the minecraft debug info is visible. WARNING THIS CAN DESTROY YOUR FRAMERATE, USE WITH CAUTION
+debug.environment.enabled=0
+
+# Includes all KEY_ environment variables in the environment variable display
+debug.environment.keys=0
+
+discover.commandhomelist=/listhomes
+discover.commandtownlist=/town list
+discover.commandwarplist=/warp
+discover.commandwarplistpage=/warp %s
+discover.enabled=1
+discover.homecountregex=^\xa7[0-9a-f]Home\(s\) : \xa7[0-9a-f]([0-9]+)
+discover.responsetimeticks=60
+discover.townregex=\xa7[0-9a-f]([a-zA-Z0-9\.\_\-]+)\xa7[0-9a-f] \[[0-9]+\]\xa7[0-9a-f]
+discover.waitforhomecount=1
+discover.warpignoreregex=^\xa7c
+discover.warppageregex=^\xa77.+?page [0-9]+ of ([0-9]+)
+
+# True if the text editor should display context-sensitive help popups
+editor.help.enabled=0
+
+# Set which action the editor will take when the minimise button is clicked. Valid options are "save", "nosave" or blank to always prompt
+editor.minimiseprompt=
+
+# True if the text editor should enable syntax highlighting
+editor.syntax.enabled=1
+
+# Serialised version of the event layout, each param is {MappingID,X,Y}
+events.layout={1000,6,4}{1001,6,24}{1002,6,44}{1003,6,64}{1004,6,84}{1005,6,104}{1006,6,124}{1007,6,144}{1008,6,164}{1009,145,4}{1010,145,24}{1011,145,44}{1012,145,64}{1013,145,84}{1014,145,104}{1015,145,124}{1016,145,144}{1017,145,164}{1018,284,4}{1019,284,24}
+
+# True to enable the filterable chat functionality
+filterablechat.enabled=0
+
+# Flood protection settings
+floodprotection.behaviour.tickslimit=180
+
+floodprotection.behaviour.ticksmessage=20
+floodprotection.enabled=1
+floodprotection.ignorecommands=0
+floodprotection.queuesize=32
+floodprotection.style=Log
+
+# Enable the slide animation in the macro binding GUI
+gui.animation=1
+
+# True if the keyboard (and event) layouts should be scaled to fit the screen rather than remaining a fixed size
+gui.autoscale=0
+
+# Pressing ENTER or ESC in the MACRO EDIT screen will return to the MACRO BIND screen
+gui.bindafteredit=0
+
+gui.bindingmode=Direct
+
+# By default the config name banner now shows the configs dropdown, enable this setting to use the old behaviour
+gui.configname.linkstosettings=0
+
+gui.optionsfirst=0
+
+# Remember which binding page was used last when opening the binding GUI, otherwise always starts with the KEYS screen
+gui.rememberpage=1
+
+# True to display the old style large copy, move and delete buttons in the binding screen
+gui.showlargebuttons=0
+
+# Show the slot ID's when hovering over container slots. Useful if you need to figure out which slots are which
+gui.showslotids=0
+
+gui.simple=0
+gui.textboxhighlight.enabled=1
+
+# Show the chat history in the 'Macro Parameter' screens
+guiparams.chathistory=1
+
+# Mapping of ASCII values to LWJGL key codes, this is used by the key event pump to supply key codes for pumped characters
+input.charmap={34,3}{35,40}{32,57}{33,2}{38,8}{39,41}{36,5}{37,6}{42,9}{40,10}{41,11}{46,52}{47,53}{44,51}{45,12}{51,4}{50,3}{49,2}{48,11}{55,8}{54,7}{53,6}{52,5}{59,39}{58,39}{57,10}{56,9}{63,53}{62,52}{61,13}{60,51}{68,32}{69,18}{70,33}{71,34}{64,41}{65,30}{66,48}{67,46}{76,38}{77,50}{78,49}{79,24}{72,35}{73,23}{74,36}{75,37}{85,22}{84,20}{87,17}{86,47}{81,16}{80,25}{83,31}{82,19}{93,27}{92,43}{95,12}{94,7}{89,21}{88,45}{91,26}{90,44}{102,33}{103,34}{100,32}{101,18}{98,48}{99,46}{97,30}{110,49}{111,24}{108,38}{109,50}{106,36}{107,37}{104,35}{105,23}{119,17}{118,47}{117,22}{116,20}{115,31}{114,19}{8962,53}{113,16}{112,25}{126,40}{125,27}{124,43}{123,26}{122,44}{121,21}{120,45}
+
+# Enable the compatibility mode key interception. Use this if the enhanced key capture mode is causing issues with other mods.
+input.compatibilitymode.enabled=0
+
+input.debounce.enabled=1
+
+# Minimum number of game ticks that must elapse before a template can be retriggered
+input.debounce.ticks=4
+
+# Disable the deep injection proxy. This proxy enables more reliable key event injection but can cause the game to crash with certain mods.
+input.deepinjection.disabled=0
+
+# Keys which will require MACRO OVERRIDE to function as macro keys
+input.keys.reserved=68,87,59,61
+
+keyboard.colour.bound=#FFFF00
+keyboard.colour.boundspecial=#FFAA00
+keyboard.colour.denied=#FF0000
+keyboard.colour.global=#00FF00
+keyboard.colour.reserved=#880000
+keyboard.colour.selected=#FFFFFF
+keyboard.colour.unbound=#404040
+
+# 0 to disable layout editing, 1 to enable the 'edit' button
+keyboard.editable=0
+
+# Overrides for some keys in the display, specifies alternate text for the key
+keyboard.labels={1,ESC}{12,-}{13,=}{14,<-}{26,[}{27,]}{28,RTN}{29,CTRL}{39,;}{40,#}{41,'}{42,#}{43,\}{51,,}{52,.}{53,/}{54,#}{55,[*]}{56,ALT}{58,CAPS}{69,NUM}{70,SCRL}{71,[7]}{72,[8]}{73,[9]}{74,[-]}{75,[4]}{76,[5]}{77,[6]}{78,[+]}{79,[1]}{80,[2]}{81,[3]}{82,[0]}{83,[.]}{156,ENT}{157,CTRL}{181,[/]}{200,#}{201,PGUP}{203,#}{205,#}{207,END}{208,#}{209,PGDN}{210,INS}{211,DEL}
+
+# Serialised version of the keyboard layout, each param is {MappingID,X,Y}
+keyboard.layout={1,20,4}{2,36,24}{3,56,24}{4,76,24}{5,96,24}{6,116,24}{7,136,24}{8,156,24}{9,176,24}{10,196,24}{11,216,24}{12,236,24}{13,256,24}{14,288,24}{15,16,40}{16,44,40}{17,64,40}{18,84,40}{19,104,40}{20,124,40}{21,144,40}{22,164,40}{23,184,40}{24,204,40}{25,224,40}{26,244,40}{27,264,40}{28,292,40}{29,20,88}{30,48,56}{31,68,56}{32,88,56}{33,108,56}{34,128,56}{35,148,56}{36,168,56}{37,188,56}{38,208,56}{39,228,56}{40,268,56}{41,248,56}{42,12,72}{43,36,72}{44,56,72}{45,76,72}{46,96,72}{47,116,72}{48,136,72}{49,156,72}{50,176,72}{51,196,72}{52,216,72}{53,236,72}{54,280,72}{55,368,116}{57,136,88}{58,20,56}{59,48,4}{60,68,4}{61,88,4}{62,108,4}{63,132,4}{64,152,4}{65,172,4}{66,192,4}{67,216,4}{68,240,4}{69,296,116}{70,368,4}{71,296,132}{72,332,132}{73,368,132}{74,404,116}{75,296,148}{76,332,148}{77,368,148}{78,404,132}{79,296,164}{80,332,164}{81,368,164}{82,314,180}{83,368,180}{87,268,4}{88,296,4}{156,404,164}{157,252,88}{181,332,116}{183,332,4}{197,404,4}{199,368,24}{200,368,72}{201,404,24}{203,332,88}{205,404,88}{207,368,40}{208,368,88}{209,404,40}{210,332,24}{211,332,40}{219,56,88}{220,216,88}{248,92,116}{249,92,132}{250,26,108}{251,164,108}{252,168,152}{253,26,152}{254,26,136}
+
+# Overrides for some keys in the display, show an ASCII symbol instead of text
+keyboard.symbols={42,30}{54,30}{156,17}{200,24}{203,27}{205,26}{208,25}{248,24}{249,25}
+
+# If true, then the custom GUI -> slot mappings are loaded from the config at startup, otherwise the defaults are always applied
+layout.bindings.loadatstartup=1
+
+# Item ID/damage values to include in the items list that aren't automatically enumerated, use {id} for base items and {id:damage} for specific damage values
+list.items.include={80}{18:2}
+
+# Base directory for ancilliary macro config files, relative to the Minecraft directory. Use . to use the Minecraft directory (old behaviour)
+macrosdirectory=/liteconfig/common/macros/
+
+# Include self in the 'online users' list ($$u)
+onlineuser.includeself=1
+
+# Number of characters to trim from the END of online user names
+onlineuser.trimchars.end=0
+
+# Number of characters to trim from the START of online user names
+onlineuser.trimchars.start=0
+
+# Saves outbound chat messages generated by the mod to the local chat history. Defaults to false
+output.enablehistory=0
+
+# Enable the config-switched popup when changing configs and imports
+overlay.configpopup.enabled=1
+
+# Enable the auto-crafting status display
+overlay.craftingstatus.enabled=1
+
+# Enable the override function when in the chat GUI, disable if using CTRL
+override.chatgui.enabled=1
+
+# Enable the MACRO OVERRIDE function
+override.enabled=0
+
+# True to show only the "simple" MACRO OVERRIDE popup instead of the full prompt bar
+override.simplepopup=1
+
+# Uses standard java formatting string, param 1 is X, 2 is Y and 3 is Z
+place.coordsformat=%1$s %2$s %3$s
+
+# Enable the 'running macros' display
+runstatus.enabled=1
+
+# Limit the number of instructions that can be processed per macro per tick
+script.run.limitpertick=100
+
+script.run.maxtimesharems=100
+
+# If enabled, items and blocks in the default "minecraft" namespace will be have the minecraft: prefix stripped from their names when returned by script commands or environment variables
+script.stripdefaultnamespace=1
+
+script.trace=0
+
+# True if the script engine should generate warnings for blocked script actions
+script.warn.permissions.enabled=0
+
+#
+# Macros
+#
+
+# KEY_R
+Macro[19].Macro=/r
+
+# KEY_Y
+Macro[21].Macro=$${GAMMA(250)}$$
+
+# KEY_I
+Macro[23].Macro=$${key("attack")}$$
+
+# KEY_F
+Macro[33].Macro=$${placesign("test", "test2","test3","test4",false)}$$
+
+# KEY_G
+Macro[34].Macro=/ch g
+
+# KEY_H
+Macro[35].Macro=$$<post.txt>
+
+# KEY_J
+Macro[36].Macro=$${EXEC("testmac.txt")}$$
+
+# KEY_K
+Macro[37].Macro=$${LOG(%@#counter%)}$$
+
+# KEY_L
+Macro[38].Macro=/ch l
+
+# KEY_X
+Macro[45].Macro=$${EXEC("sign.txt")}$$
+
+# KEY_C
+Macro[46].Macro=$${LOG(&fSaved screenshot as &f&n2005-12-9-12_12.43.40.png)}$$
+
+# KEY_V
+Macro[47].Macro=$$<mafia.txt>
+
+# KEY_B
+Macro[48].Macro=$$<fakechat.txt>
+
+# KEY_N
+Macro[49].Macro=$$<trade.txt>
+
+# KEY_M
+Macro[50].Macro=$${LOG(%@#afk%)}$$
+
+# KEY_NUMPAD7
+Macro[71].Macro=/sell hand
+
+# KEY_NUMPAD8
+Macro[72].Macro=$${ad.txt}$$
+
+# KEY_NUMPAD9
+Macro[73].Macro=$${EXEC("sign.txt")}$$
+
+# KEY_NUMPAD4
+Macro[75].Macro=$${CLEARCHAT}$$ $${LOG("&4Chat Cleared!")}$$
+
+# KEY_NUMPAD5
+Macro[76].Macro=$${SHOWGUI(onlineplayers)}$$
+
+# KEY_NUMPAD6
+Macro[77].Macro=$${SHOWGUI(teleports)}$$
+
+# KEY_NUMPAD1
+Macro[79].Macro=$${GAMMA(500)}$$
+
+# KEY_NUMPAD2
+Macro[80].Macro=/warp $$t
+Macro[80].Town=blazefire
+
+# KEY_NUMPAD3
+Macro[81].Macro=$${SET(@#afk, 1)}$$
+
+# KEY_NUMPAD0
+Macro[82].Macro=$${EXEC(test.txt)}$$
+
+# KEY_DECIMAL
+Macro[83].Macro=$${SHOWGUI("info")}$$
+
+# KEY_MOUSE3
+Macro[253].Macro=$${INVENTORYUP(1)}$$
+
+# KEY_MOUSE4
+Macro[254].Macro=$$<addplayer.txt>
+
+# CONTROL_PLOTS
+Macro[258].Macro=/ch qm tr Selling a nice riverside house near a populated town for just 5k! PM me
+
+# CONTROL_LOTTO
+Macro[259].Macro=/lotto buy 1
+
+# CONTROL_ADDMEMBER
+Macro[263].Macro=/rg addmember hayland $$u
+
+# CONTROL_BUTTON 264
+Macro[264].Macro=/rg removemember hayland $$u
+
+# CONTROL_BUTTON 267H
+Macro[267].Macro=/home
+
+# CONTROL_BUTTON 268
+Macro[268].Macro=/warp blazefire
+
+# CONTROL_BUTTON 269
+Macro[269].Macro=/market
+
+# CONTROL_BUTTON 270
+Macro[270].Macro=/spawn
+
+# CONTROL_BUTTON 271
+Macro[271].Macro=/warp station95
+
+# CONTROL_BUTTON 272
+Macro[272].Macro=/warp fairfield
+
+# CONTROL_BUTTON 273
+Macro[273].Macro=/warp fulkner
+
+# CONTROL_BUTTON 274
+Macro[274].Macro=/wild
+
+# CONTROL_BUTTON 275
+Macro[275].Macro=/warp mining
+
+# CONTROL_BUTTON 276
+Macro[276].Macro=/warp divinity
+
+# CONTROL_BUTTON 278
+Macro[278].Macro=/warp enchant
+
+# CONTROL_BUTTON 279
+Macro[279].Macro=/warp station11
+
+# CONTROL_BUTTON 280
+Macro[280].Macro=/warp nether
+
+# CONTROL_BUTTON 281
+Macro[281].Macro=/warp station39
+
+# CONTROL_BUTTON 283
+Macro[283].Macro=/warp southpark
+
+# CONTROL_BUTTON 284
+Macro[284].Macro=/warp oasis_farms
+
+# CONTROL_BUTTON 285
+Macro[285].Macro=$${EXEC("toggle.txt")}$$
+
+# CONTROL_BUTTON 286
+Macro[286].Macro=/warp builderfarm
+
+# CONTROL_TOGGLEAFK
+Macro[288].Macro=$${toggle(@#afk, 1)}$$
+
+# CONTROL_BUTTON 289
+Macro[289].Macro=/warp buildtopia
+
+# EVENT_ONJOINGAME
+Macro[1000].Macro=$${EXEC(balance.txt)}$$$${EXEC("ads.txt")}$$$${EXEC("fps.txt")}$$$${EXEC("pump.txt")}$$$${EXEC("sprint.txt")}$$$$<trade.txt>$$<chat.txt>$${SET(%@#messages, 1)}$$
+
+# EVENT_ONCHAT
+Macro[1001].Macro=$$<chat.txt>$$<addplayer.txt>
+
+# EVENT_ONHEALTHCHANGE
+Macro[1002].Macro=$${key("attack")}$$
+
+# EVENT_ONFOODCHANGE
+Macro[1003].Macro=$${EXEC(hungerwarning.txt)}$$
+
+# EVENT_ONITEMDURABILITYCHANGE
+Macro[1011].Macro=$${EXEC("warning.txt")}$$
+
+# EVENT_ONPLAYERJOINED
+Macro[1014].Macro=$${LOG(&f%JOINEDPLAYER% joined the game)}$$
+
+# EVENT_ONSENDCHATMESSAGE
+Macro[1019].Macro=$$<trade.txt>$$<chat.txt>$$<lwc.txt>
+
+
+DIRECTIVE BEGINCONFIG() Mining
+
+# EVENT_ONJOINGAME
+Macro[1000].Macro=$${EXEC("mining.txt")}$$
+
+# EVENT_ONITEMDURABILITYCHANGE
+Macro[1011].Macro=$${EXEC("repair.txt")}$$
+
+
+DIRECTIVE BEGINCONFIG() Lotto Reminder
+
+# EVENT_ONJOINGAME
+Macro[1000].Macro=$${DO()}$$$${SET(@#lotto, 1)}$$$${ECHO("/lotto")}$$$${WAIT(3)}$$$${LOOP()}$$
+
+
+DIRECTIVE BEGINCONFIG() Lock Macro
+
+# KEY_NUMPAD4
+Macro[75].Macro=$${SET(@#rg, 0)}$$
+
+# KEY_NUMPAD1
+Macro[79].Macro=$${EXEC(locks.txt)}$$
+
+
+DIRECTIVE BEGINCONFIG() Lotto Macro
+
+# EVENT_ONJOINGAME
+Macro[1000].Macro=$${EXEC("lotto.txt")}$$
+
+
+DIRECTIVE BEGINCONFIG() Erep
+
+# KEY_B
+Macro[48].Macro=$${Prompt(&test, "$$?", "Enter something!", true)}$$$${LOG("Hi")}$$
+
+
+DIRECTIVE BEGINCONFIG() Job
+
+# KEY_B
+Macro[48].Macro=$${ECHO(/cinfo)}$$$${Set(@#cinfo, 1)}$$
+
+# KEY_N
+Macro[49].Macro=$${LOG(%HITID%)}$$
+
+# KEY_NUMPAD4
+Macro[75].Macro=$${SHOWGUI(AutoRemoval)}$$
+
+# KEY_NUMPAD1
+Macro[79].Macro=$${LOGto("test2.txt", "TEST")}$$
+
+# CONTROL_HY
+Macro[290].Macro=$${ECHO(/cinfo)}$$$${Set(@#cinfo, 1)}$$
+
+
+DIRECTIVE BEGINCONFIG() None
+
+# KEY_ESCAPE
+Macro[1].Macro=
+Macro[1].Condition=TRUE
+
+# KEY_1
+Macro[2].Macro=
+Macro[2].Condition=TRUE
+
+# KEY_2
+Macro[3].Macro=
+Macro[3].Condition=TRUE
+
+# KEY_3
+Macro[4].Macro=
+Macro[4].Condition=TRUE
+
+# KEY_4
+Macro[5].Macro=
+Macro[5].Condition=TRUE
+
+# KEY_5
+Macro[6].Macro=
+Macro[6].Condition=TRUE
+
+# KEY_6
+Macro[7].Macro=
+Macro[7].Condition=TRUE
+
+# KEY_7
+Macro[8].Macro=
+Macro[8].Condition=TRUE
+
+# KEY_8
+Macro[9].Macro=
+Macro[9].Condition=TRUE
+
+# KEY_9
+Macro[10].Macro=
+Macro[10].Condition=TRUE
+
+# KEY_0
+Macro[11].Macro=
+Macro[11].Condition=TRUE
+
+# KEY_MINUS
+Macro[12].Macro=
+Macro[12].Condition=TRUE
+
+# KEY_EQUALS
+Macro[13].Macro=
+Macro[13].Condition=TRUE
+
+# KEY_BACK
+Macro[14].Macro=
+Macro[14].Condition=TRUE
+
+# KEY_TAB
+Macro[15].Macro=
+Macro[15].Condition=TRUE
+
+# KEY_Q
+Macro[16].Macro=
+Macro[16].Condition=TRUE
+
+# KEY_W
+Macro[17].Macro=
+Macro[17].Condition=TRUE
+
+# KEY_E
+Macro[18].Macro=
+Macro[18].Condition=TRUE
+
+# KEY_R
+Macro[19].Macro=
+Macro[19].Condition=TRUE
+
+# KEY_T
+Macro[20].Macro=
+Macro[20].Condition=TRUE
+
+# KEY_Y
+Macro[21].Macro=
+Macro[21].Condition=TRUE
+
+# KEY_U
+Macro[22].Macro=
+Macro[22].Condition=TRUE
+
+# KEY_I
+Macro[23].Macro=
+Macro[23].Condition=TRUE
+
+# KEY_O
+Macro[24].Macro=
+Macro[24].Condition=TRUE
+
+# KEY_P
+Macro[25].Macro=
+Macro[25].Condition=TRUE
+
+# KEY_LBRACKET
+Macro[26].Macro=
+Macro[26].Condition=TRUE
+
+# KEY_RBRACKET
+Macro[27].Macro=
+Macro[27].Condition=TRUE
+
+# KEY_RETURN
+Macro[28].Macro=
+Macro[28].Condition=TRUE
+
+# KEY_LCONTROL
+Macro[29].Macro=
+Macro[29].Condition=TRUE
+
+# KEY_A
+Macro[30].Macro=
+Macro[30].Condition=TRUE
+
+# KEY_S
+Macro[31].Macro=
+Macro[31].Condition=TRUE
+
+# KEY_D
+Macro[32].Macro=
+Macro[32].Condition=TRUE
+
+# KEY_F
+Macro[33].Macro=
+Macro[33].Condition=TRUE
+
+# KEY_G
+Macro[34].Macro=
+Macro[34].Condition=TRUE
+
+# KEY_H
+Macro[35].Macro=
+Macro[35].Condition=TRUE
+
+# KEY_J
+Macro[36].Macro=
+Macro[36].Condition=TRUE
+
+# KEY_K
+Macro[37].Macro=
+Macro[37].Condition=TRUE
+
+# KEY_L
+Macro[38].Macro=
+Macro[38].Condition=TRUE
+
+# KEY_SEMICOLON
+Macro[39].Macro=
+Macro[39].Condition=TRUE
+
+# KEY_APOSTROPHE
+Macro[40].Macro=
+Macro[40].Condition=TRUE
+
+# KEY_GRAVE
+Macro[41].Macro=
+Macro[41].Condition=TRUE
+
+# KEY_LSHIFT
+Macro[42].Macro=
+Macro[42].Condition=TRUE
+
+# KEY_BACKSLASH
+Macro[43].Macro=
+Macro[43].Condition=TRUE
+
+# KEY_Z
+Macro[44].Macro=
+Macro[44].Condition=TRUE
+
+# KEY_X
+Macro[45].Macro=$${FOV(20, 0.2)}$$
+Macro[45].OnKeyUp=$${FOV(110, 0.2)}$$
+Macro[45].Condition=TRUE
+Macro[45].Mode=keystate
+
+# KEY_C
+Macro[46].Macro=
+Macro[46].Condition=TRUE
+
+# KEY_V
+Macro[47].Macro=
+Macro[47].Condition=TRUE
+
+# KEY_B
+Macro[48].Macro=
+Macro[48].Condition=TRUE
+
+# KEY_N
+Macro[49].Macro=
+Macro[49].Condition=TRUE
+
+# KEY_M
+Macro[50].Macro=
+Macro[50].Condition=TRUE
+
+# KEY_COMMA
+Macro[51].Macro=
+Macro[51].Condition=TRUE
+
+# KEY_PERIOD
+Macro[52].Macro=
+Macro[52].Condition=TRUE
+
+# KEY_SLASH
+Macro[53].Macro=
+Macro[53].Condition=TRUE
+
+# KEY_RSHIFT
+Macro[54].Macro=
+Macro[54].Condition=TRUE
+
+# KEY_MULTIPLY
+Macro[55].Macro=
+Macro[55].Condition=TRUE
+
+# KEY_LMENU
+Macro[56].Macro=
+Macro[56].Condition=TRUE
+
+# KEY_SPACE
+Macro[57].Macro=
+Macro[57].Condition=TRUE
+
+# KEY_CAPITAL
+Macro[58].Macro=
+Macro[58].Condition=TRUE
+
+# KEY_F1
+Macro[59].Macro=
+Macro[59].Condition=TRUE
+
+# KEY_F2
+Macro[60].Macro=
+Macro[60].Condition=TRUE
+
+# KEY_F3
+Macro[61].Macro=
+Macro[61].Condition=TRUE
+
+# KEY_F4
+Macro[62].Macro=
+Macro[62].Condition=TRUE
+
+# KEY_F5
+Macro[63].Macro=
+Macro[63].Condition=TRUE
+
+# KEY_F6
+Macro[64].Macro=
+Macro[64].Condition=TRUE
+
+# KEY_F7
+Macro[65].Macro=
+Macro[65].Condition=TRUE
+
+# KEY_F8
+Macro[66].Macro=
+Macro[66].Condition=TRUE
+
+# KEY_F9
+Macro[67].Macro=
+Macro[67].Condition=TRUE
+
+# KEY_F10
+Macro[68].Macro=
+Macro[68].Condition=TRUE
+
+# KEY_NUMLOCK
+Macro[69].Macro=
+Macro[69].Condition=TRUE
+
+# KEY_SCROLL
+Macro[70].Macro=
+Macro[70].Condition=TRUE
+
+# KEY_NUMPAD7
+Macro[71].Macro=/sell hand
+Macro[71].Condition=TRUE
+
+# KEY_NUMPAD8
+Macro[72].Macro=$${ad.txt}$$
+Macro[72].Condition=TRUE
+
+# KEY_NUMPAD9
+Macro[73].Macro=
+Macro[73].Condition=TRUE
+
+# KEY_SUBTRACT
+Macro[74].Macro=
+Macro[74].Condition=TRUE
+
+# KEY_NUMPAD4
+Macro[75].Macro=$${CLEARCHAT}$$ $${LOG("&4Chat Cleared!")}$$
+Macro[75].Condition=TRUE
+
+# KEY_NUMPAD5
+Macro[76].Macro=$${SHOWGUI(onlineplayers)}$$
+Macro[76].Condition=TRUE
+
+# KEY_NUMPAD6
+Macro[77].Macro=$${SHOWGUI(teleports)}$$
+Macro[77].Condition=TRUE
+
+# KEY_ADD
+Macro[78].Macro=
+Macro[78].Condition=TRUE
+
+# KEY_NUMPAD1
+Macro[79].Macro=$${GAMMA(500)}$$
+Macro[79].Condition=TRUE
+
+# KEY_NUMPAD2
+Macro[80].Macro=/warp $$t
+Macro[80].Condition=TRUE
+
+# KEY_NUMPAD3
+Macro[81].Macro=
+Macro[81].Condition=TRUE
+
+# KEY_NUMPAD0
+Macro[82].Macro=$${EXEC(test.txt)}$$
+Macro[82].Condition=TRUE
+
+# KEY_DECIMAL
+Macro[83].Macro=$${SHOWGUI("info")}$$
+Macro[83].Condition=TRUE
+
+# KEY_F11
+Macro[87].Macro=
+Macro[87].Condition=TRUE
+
+# KEY_F12
+Macro[88].Macro=
+Macro[88].Condition=TRUE
+
+# KEY_NUMPADENTER
+Macro[156].Macro=
+Macro[156].Condition=TRUE
+
+# KEY_RCONTROL
+Macro[157].Macro=
+Macro[157].Condition=TRUE
+
+# KEY_DIVIDE
+Macro[181].Macro=
+Macro[181].Condition=TRUE
+
+# KEY_SYSRQ
+Macro[183].Macro=
+Macro[183].Condition=TRUE
+
+# KEY_PAUSE
+Macro[197].Macro=
+Macro[197].Condition=TRUE
+
+# KEY_HOME
+Macro[199].Macro=
+Macro[199].Condition=TRUE
+
+# KEY_UP
+Macro[200].Macro=
+Macro[200].Condition=TRUE
+
+# KEY_PRIOR
+Macro[201].Macro=
+Macro[201].Condition=TRUE
+
+# KEY_LEFT
+Macro[203].Macro=
+Macro[203].Condition=TRUE
+
+# KEY_RIGHT
+Macro[205].Macro=
+Macro[205].Condition=TRUE
+
+# KEY_END
+Macro[207].Macro=
+Macro[207].Condition=TRUE
+
+# KEY_DOWN
+Macro[208].Macro=
+Macro[208].Condition=TRUE
+
+# KEY_NEXT
+Macro[209].Macro=
+Macro[209].Condition=TRUE
+
+# KEY_INSERT
+Macro[210].Macro=
+Macro[210].Condition=TRUE
+
+# KEY_DELETE
+Macro[211].Macro=
+Macro[211].Condition=TRUE
+
+# KEY_LMETA
+Macro[219].Macro=
+Macro[219].Condition=TRUE
+
+# KEY_RMETA
+Macro[220].Macro=
+Macro[220].Condition=TRUE
+
+# KEY_MWHEELUP
+Macro[248].Macro=
+Macro[248].Condition=TRUE
+
+# KEY_MWHEELDOWN
+Macro[249].Macro=
+Macro[249].Condition=TRUE
+
+# KEY_LMOUSE
+Macro[250].Macro=
+Macro[250].Condition=TRUE
+
+# KEY_RMOUSE
+Macro[251].Macro=
+Macro[251].Condition=TRUE
+
+# KEY_MIDDLEMOUSE
+Macro[252].Macro=
+Macro[252].Condition=TRUE
+
+# KEY_MOUSE3
+Macro[253].Macro=$${INVENTORYUP(1)}$$
+Macro[253].Condition=TRUE
+
+# KEY_MOUSE4
+Macro[254].Macro=$${INVENTORYDOWN(1)}$$
+Macro[254].Condition=TRUE
+
+# CONTROL_PLOTS
+Macro[258].Macro=/ch qm tr Selling a nice riverside house near a populated town for just 5k! PM me
+Macro[258].Condition=TRUE
+
+# CONTROL_LOTTO
+Macro[259].Macro=/lotto buy 1
+Macro[259].Condition=TRUE
+
+# CONTROL_ADDMEMBER
+Macro[263].Macro=/rg addmember hayland $$u
+Macro[263].Condition=TRUE
+
+# CONTROL_BUTTON 264
+Macro[264].Macro=/rg removemember hayland $$u
+Macro[264].Condition=TRUE
+
+# CONTROL_BUTTON 267H
+Macro[267].Macro=/home
+Macro[267].Condition=TRUE
+
+# CONTROL_BUTTON 268
+Macro[268].Macro=/warp blazefire
+Macro[268].Condition=TRUE
+
+# CONTROL_BUTTON 269
+Macro[269].Macro=/market
+Macro[269].Condition=TRUE
+
+# CONTROL_BUTTON 270
+Macro[270].Macro=/spawn
+Macro[270].Condition=TRUE
+
+# CONTROL_BUTTON 271
+Macro[271].Macro=/warp station95
+Macro[271].Condition=TRUE
+
+# CONTROL_BUTTON 272
+Macro[272].Macro=/warp fairfield
+Macro[272].Condition=TRUE
+
+# CONTROL_BUTTON 273
+Macro[273].Macro=/warp fulkner
+Macro[273].Condition=TRUE
+
+# CONTROL_BUTTON 274
+Macro[274].Macro=/wild
+Macro[274].Condition=TRUE
+
+# CONTROL_BUTTON 275
+Macro[275].Macro=/warp mining
+Macro[275].Condition=TRUE
+
+# CONTROL_BUTTON 276
+Macro[276].Macro=/warp divinity
+Macro[276].Condition=TRUE
+
+# EVENT_ONJOINGAME
+Macro[1000].Macro=$${EXEC(balance.txt)}$$
+Macro[1000].Condition=TRUE
+
+# EVENT_ONCHAT
+Macro[1001].Macro=
+Macro[1001].Condition=TRUE
+
+# EVENT_ONHEALTHCHANGE
+Macro[1002].Macro=
+Macro[1002].Condition=TRUE
+
+# EVENT_ONFOODCHANGE
+Macro[1003].Macro=$${EXEC(hungerwarning.txt)}$$
+Macro[1003].Condition=TRUE
+
+# EVENT_ONARMOURCHANGE
+Macro[1004].Macro=
+Macro[1004].Condition=TRUE
+
+# EVENT_ONWORLDCHANGE
+Macro[1005].Macro=
+Macro[1005].Condition=TRUE
+
+# EVENT_ONMODECHANGE
+Macro[1006].Macro=
+Macro[1006].Condition=TRUE
+
+# EVENT_ONINVENTORYSLOTCHANGE
+Macro[1007].Macro=$${SETLABEL(ylevel, %YPOS%)}$$
+Macro[1007].Condition=TRUE
+
+# EVENT_ONOXYGENCHANGE
+Macro[1008].Macro=
+Macro[1008].Condition=TRUE
+
+# EVENT_ONXPCHANGE
+Macro[1009].Macro=
+Macro[1009].Condition=TRUE
+
+# EVENT_ONLEVELCHANGE
+Macro[1010].Macro=
+Macro[1010].Condition=TRUE
+
+# EVENT_ONITEMDURABILITYCHANGE
+Macro[1011].Macro=$${EXEC("warning.txt")}$$
+Macro[1011].Condition=TRUE
+
+# EVENT_ONWEATHERCHANGE
+Macro[1012].Macro=
+Macro[1012].Condition=TRUE
+
+# EVENT_ONPICKUPITEM
+Macro[1013].Macro=$${LOG(Picked up %PICKUPAMOUNT% %PICKUPITEM%)}$$
+Macro[1013].Condition=TRUE
+
+# EVENT_ONPLAYERJOINED
+Macro[1014].Macro=$${LOG(&f%JOINEDPLAYER% joined the game)}$$
+Macro[1014].Condition=TRUE
+
+# EVENT_ONSHOWGUI
+Macro[1015].Macro=
+Macro[1015].Condition=TRUE
+
+# EVENT_ONARMOURDURABILITYCHANGE
+Macro[1016].Macro=
+Macro[1016].Condition=TRUE
+
+# EVENT_ONAUTOCRAFTINGCOMPLETE
+Macro[1017].Macro=
+Macro[1017].Condition=TRUE
+
+# EVENT_ONCONFIGCHANGE
+Macro[1018].Macro=
+Macro[1018].Condition=TRUE
+
+# EVENT_ONSENDCHATMESSAGE
+Macro[1019].Macro=
+Macro[1019].Condition=TRUE
+

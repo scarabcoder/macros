@@ -1,0 +1,6 @@
+IF(%SERVERNAME% == "EcoCityCraft")
+DO()
+    WAIT(8)
+    ECHO("/lot")
+LOOP()
+ENDIF()

@@ -1,0 +1,162 @@
+$${
+IF(@#trade_time<=180)
+    SET(@#trade_time,180)
+ENDIF
+IF(%KEYNAME%=="onJoinGame")
+    SET(@#trade_failsafe,0)
+    UNSET(@tradead)
+ELSEIF(%KEYNAME%!="onSendChatMessage")
+    IF(@tradead);
+        LOG("&7[Tr] &eYou stopped advertising.")
+        UNSET(@tradead)
+    ELSE
+        IF((%@#trade_failsafe%>=1) && (%@#trade_failsafe%<180))
+            LOG("&7[Tr] &cYou have recently advertised under 3 minutes ago.")
+        ELSE
+            LOG("&7[Tr] &aYou started advertising.")
+            SET(@tradead)
+            #i=1
+            DO()
+                IF(@tradead==false)
+                    UNSET(@trade_breaknow)
+                    DO()
+                    INC(@#trade_failsafe)
+                    WAIT(1000ms)
+                    IF(@trade_breaknow)
+                        UNSET(@trade_breaknow)
+                        BREAK
+                    ENDIF
+                    WHILE(@#trade_failsafe<=180)
+                    BREAK
+                ENDIF
+                @#trade_failsafe=#i
+                IF(#i==1)
+                    IF(@&tradead1!="")
+                        ECHO("/ch qm tr %@&tradead1%")
+                    ENDIF
+                    IF(@&tradead2!="")
+                        ECHO("/ch qm tr %@&tradead2%")
+                    ENDIF
+                ENDIF
+                WAIT(1000ms)
+                INC(#i)
+                IF(#i>%@#trade_time%)
+                    #i=1
+                ENDIF
+            LOOP
+        ENDIF
+    ENDIF
+ELSE
+    IFMATCHES(%CHAT%, "^/help (ad|ads)")
+        FILTER
+        LOG(" &e---- &6Help: ad &e-- &6Page &c1 &6of &c1 &e----")
+        LOG("&7&lAutomated Advertisements Macro v1.0")
+        LOG("&7&oDeveloped by 3point14mp")
+        LOG("&3/ad set 1 &bmsg &7- sets your first-line ad message")
+        LOG("&3/ad set 2 &bmsg &7- sets your second-line ad message")
+        LOG("&3/ad clear &7- clears your stored ad messages")
+        LOG("&3/ad clear 1 &7- clears your first-line ad message")
+        LOG("&3/ad clear 2 &7- clears your second-line ad message")
+        LOG("&3/ad time &bseconds &7- sets time between each ad (minimum 180)")
+        LOG("&3/ad info &7- displays stored ads and the status of your macro")
+    ENDIF
+    IFMATCHES(%CHAT%, "^/ad set 1$")
+        FILTER
+        LOG("&fSets your first of two allowable trade ads.")
+        LOG("&f/ad set 1 <message>")
+    ENDIF
+    IFMATCHES(%CHAT%, "^/ad set 2$")
+        FILTER
+        LOG("&fSets your second allowable trade ad.")
+        LOG("&f/ad set 2 <message>")
+    ENDIF
+    IFMATCHES(%CHAT%, "^/ad set 1 ")
+        FILTER
+        MATCH(%CHAT%, "^/ad set 1 (.+)",{&newad})
+        @&tradead1=%&newad%
+        LOG("&7[Tr] &b&oFirst-line Trade Ad Set To")
+        LOG("&7[Tr] &f%&newad%")
+        @#trade_failsafe=0
+        @trade_breaknow=true
+    ENDIF
+    IFMATCHES(%CHAT%, "^/ad set 2 ")
+        FILTER
+        MATCH(%CHAT%, "^/ad set 2 (.+)",{&newad})
+        @&tradead2=%&newad%
+        LOG("&7[Tr] &b&oSecond-line Trade Ad Set To:")
+        LOG("&7[Tr] &f%&newad%")
+        @#trade_failsafe=0
+        @trade_breaknow=true
+    ENDIF
+    IFMATCHES(%CHAT%, "^/ad clear$")
+        FILTER
+        @&tradead1=""
+        @&tradead2=""
+        LOG("&7[Tr] &dCleared First/Second-line Trade Ads")
+        @#trade_failsafe=0
+        @trade_breaknow=true
+    ENDIF
+    IFMATCHES(%CHAT%, "^/ad clear 1$")
+        FILTER
+        @&tradead1=""
+        LOG("&7[Tr] &dCleared First-line Trade Ad")
+        @#trade_failsafe=0
+        @trade_breaknow=true
+    ENDIF
+    IFMATCHES(%CHAT%, "^/ad clear 2$")
+        FILTER
+        @&tradead2=""
+        LOG("&7[Tr] &dCleared Second-line Trade Ad")
+        @#trade_failsafe=0
+        @trade_breaknow=true
+    ENDIF
+    IFMATCHES(%CHAT%, "^/ad time$")
+        FILTER
+        LOG("&fSets the time between ads. Must be at least 180 seconds.")
+        LOG("&f/adtime <seconds>")
+    ENDIF
+    IFMATCHES(%CHAT%, "^/ad time ")
+        FILTER
+        MATCH(%CHAT%,"^/ad time (.+)",{&newtime})
+        SET(#newtime,%&newtime%)
+        IF(#newtime<180)
+            LOG("&7[Tr] &cError: Must keep ads at least &e180 &cseconds apart")
+        ELSE
+            @#trade_time=%#newtime%
+            LOG("&7[Tr] &aSet time between ads to &e%#newtime% &aseconds")
+        ENDIF
+    ENDIF
+    IFMATCHES(%CHAT%, "^/ad info")
+        FILTER
+        IF((@&tradead1=="") && (@&tradead2==""))
+            LOG("&7[Tr] You do not currently have any trade ad messages.")
+        ELSE
+            LOG("&7[Tr] Your planned ad messages are")
+            IF(@&tradead1!="")
+                SPLIT(" ","%@&tradead1%",&split[])
+                FOR(#j,4,75)
+                    IF(&split[%#j%]==""); BREAK; ENDIF
+                    SET(&split[%#j%],"&7%&split[%#j%]%)
+                NEXT
+                JOIN(" ","&split[]",&t1)
+                LOG("&7[Tr] &fFirst-line: &7%&t1%")
+            ENDIF
+            IF(@&tradead2!="")
+                SPLIT(" ","%@&tradead2%",&split2[])
+                FOR(#j,4,75)
+                    IF(&split2[%#j%]==""); BREAK; ENDIF
+                    SET(&split2[%#j%],"&7%&split2[%#j%]%)
+                NEXT
+                JOIN(" ","&split2[]",&t2)
+                LOG("&7[Tr] &fSecond-line: &7%&t2%")
+            ENDIF
+            LOG("&7[Tr] &6Scheduled time between ads: &e%@#trade_time% &6seconds")
+            IF((%@#trade_failsafe%>0) && (%@#trade_failsafe%<=180))
+                LOG("&7[Tr] &6Status: &cYour last automated ad was &e%@#trade_failsafe% &cseconds ago")
+            ELSE
+                LOG("&7[Tr] &6Status: &aMacro ready to use")
+            ENDIF
+        ENDIF
+    ENDIF
+ENDIF
+}$$

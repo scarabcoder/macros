@@ -1,0 +1,3 @@
+If(HEALTH < 4)
+ECHO(/home)
+ENDIF

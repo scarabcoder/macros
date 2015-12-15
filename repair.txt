@@ -1,0 +1,5 @@
+if(ITEMNAME == "Diamond Pickaxe")
+if(DURABILITY < 780)
+ECHO("/erepair")
+endif()
+endif()

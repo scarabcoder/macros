@@ -1,0 +1,9 @@
+&tradetext = "[Trade]"
+&line3 = %ITEM%
+prompt(&itemamount,$$?,"How many units are you selling per buy?")
+prompt(&line3am,$$?,"How much of the item you are selling do you want to stock? (Example: 5)")
+prompt(&line2,$$?,"How much will this unit cost? (example:$20, 1 dirt)")
+&line3 = %&itemamount% %&line3%:%&line3am%
+
+placesign(%&tradetext%,%&line2%,%&line3%,"",true)
+GUI()

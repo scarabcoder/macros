@@ -1,0 +1,4 @@
+@&testing = testhih
+REPLACE(@&testing, "test", "")
+LOG(%@&testing%)
+

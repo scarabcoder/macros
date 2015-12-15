@@ -1,0 +1,4 @@
+DO()
+    WAIT(5)
+    ECHO(/lotto)
+LOOP()

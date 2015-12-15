@@ -1,0 +1,4 @@
+IF(%HEALTH% < 1)
+    RESPAWN()
+ENDIF
+LOG("HI")

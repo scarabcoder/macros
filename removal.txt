@@ -1,0 +1,2 @@
+ECHO(/cinfo)
+@#cinfo = 1

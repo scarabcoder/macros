@@ -1,0 +1,544 @@
+ What is your In Game name: ScarabCoder
+ What town are the protections in:
+ buildtopia
+ Are these locks in a PvP zone?
+ No
+ Are you the co-mayor or mayor?
+ Yes
+ What are the coordinates of this protection?
+ /tppos 2156 64 5119
+ Whose protections are these?
+ Owner: BuildsByGideon (0214e251-b01b-4c86-934c-35ec95ae724a) 
+ What kind of protections are these?
+ Chest
+ How many protections are we removing?
+ One
+ Is this user banned from the server? If not
+ Can't auto-fill
+ Why do you want it gone/reasons?
+ In the way
+
+
+
+What is your In Game name: ScarabCoder
+What town are the protections in:
+buildtopia
+Are these locks in a PvP zone?
+No
+Are you the co-mayor or mayor?
+Yes
+What are the coordinates of this protection?
+/tppos 2158 64 5119
+Whose protections are these?
+Owner: BuildsByGideon (0214e251-b01b-4c86-934c-35ec95ae724a) 
+What kind of protections are these?
+Chest
+How many protections are we removing?
+One
+Is this user banned from the server? If not
+Can't auto-fill
+Why do you want it gone/reasons?
+In the way
+
+
+
+What is your In Game name: ScarabCoder
+What town are the protections in:
+buildtopia
+Are these locks in a PvP zone?
+No
+Are you the co-mayor or mayor?
+Yes
+What are the coordinates of this protection?
+/tppos 2157 65 5120
+Whose protections are these?
+Owner: BuildsByGideon (0214e251-b01b-4c86-934c-35ec95ae724a) 
+What kind of protections are these?
+Chest
+How many protections are we removing?
+One
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+Why do you want it gone/reasons?
+In the way
+
+
+
+What is your In Game name: ScarabCoder
+What town are the protections in:
+buildtopia
+Are these locks in a PvP zone?
+No
+Are you the co-mayor or mayor?
+Yes
+What are the coordinates of this protection?
+/tppos 2157 65 5120
+Whose protections are these?
+Owner: BuildsByGideon (0214e251-b01b-4c86-934c-35ec95ae724a) 
+What kind of protections are these?
+Chest
+How many protections are we removing?
+One
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+Why do you want it gone/reasons?
+In the way/cleanup
+
+
+
+What is your In Game name: ScarabCoder
+What town are the protections in:
+buildtopia
+Are these locks in a PvP zone?
+No
+Are you the co-mayor or mayor?
+Yes
+What are the coordinates of this protection?
+/tppos 2185 64 5128
+Whose protections are these?
+Owner: BuildsByGideon (0214e251-b01b-4c86-934c-35ec95ae724a) 
+What kind of protections are these?
+Chest
+How many protections are we removing?
+One
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+Why do you want it gone/reasons?
+In the way/cleanup
+
+
+
+What is your In Game name: ScarabCoder
+What town are the protections in:
+buildtopia
+Are these locks in a PvP zone?
+No
+Are you the co-mayor or mayor?
+Yes
+What are the coordinates of this protection?
+/tppos 2186 64 5126
+Whose protections are these?
+Owner: BuildsByGideon (0214e251-b01b-4c86-934c-35ec95ae724a) 
+What kind of protections are these?
+Chest
+How many protections are we removing?
+One
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+Why do you want it gone/reasons?
+In the way/cleanup
+
+
+
+What is your In Game name: ScarabCoder
+What town are the protections in:
+buildtopia
+Are these locks in a PvP zone?
+No
+Are you the co-mayor or mayor?
+Yes
+What are the coordinates of this protection?
+/tppos 2157 64 5118 50 12
+What world is this protection in?
+rising
+Whose protections are these?
+Owner: BuildsByGideon (0214e251-b01b-4c86-934c-35ec95ae724a) 
+What kind of protections are these?
+Chest
+How many protections are we removing?
+One
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+Why do you want it gone/reasons?
+In the way/cleanup
+
+
+
+What is your In Game name: ScarabCoder
+
+What town are the protections in:
+buildtopia
+
+Are these locks in a PvP zone?
+No
+
+Are you the co-mayor or mayor?
+Yes
+
+What are the coordinates of this protection?
+/tppos 2156 64 5119 19 12
+
+What world is this protection in?
+rising
+
+Whose protections are these?
+Owner: BuildsByGideon (0214e251-b01b-4c86-934c-35ec95ae724a) 
+
+What kind of protections are these?
+Chest
+
+How many protections are we removing?
+One
+
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+
+Why do you want it gone/reasons?
+In the way/cleanup
+
+
+
+-----------------BEGIN AUTO-GENERATED TEXT----------------
+What is your In Game name: ScarabCoder
+
+What town are the protections in:
+buildtopia
+
+Are these locks in a PvP zone?
+No
+
+Are you the co-mayor or mayor?
+Yes
+
+What are the coordinates of this protection?
+/tppos 2155 64 5119 10 15
+
+What world is this protection in?
+rising
+
+Whose protections are these?
+Owner: BuildsByGideon (0214e251-b01b-4c86-934c-35ec95ae724a) 
+
+What kind of protections are these?
+Chest
+
+How many protections are we removing?
+One
+
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+
+Why do you want it gone/reasons?
+In the way/cleanup
+--------------------END AUTO-GENERATED TEXT---------------
+
+
+
+-----------------BEGIN AUTO-GENERATED TEXT----------------
+What is your In Game name: ScarabCoder
+
+What town are the protections in:
+buildtopia
+
+Are these locks in a PvP zone?
+No
+
+Are you the co-mayor or mayor?
+Yes
+
+What are the coordinates of this protection?
+/tppos 2156 64 Y5119 4 14
+(Admins: You can copy and paste this command, it includes pitch+yaw)
+
+What world is this protection in?
+rising
+
+Whose protections are these?
+Owner: BuildsByGideon (0214e251-b01b-4c86-934c-35ec95ae724a) 
+
+What kind of protections are these?
+Chest
+
+How many protections are we removing?
+One
+
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+
+Why do you want it gone/reasons?
+In the way/cleanup
+--------------------END AUTO-GENERATED TEXT---------------
+
+
+
+-----------------BEGIN AUTO-GENERATED TEXT----------------
+What is your In Game name: ScarabCoder
+
+What town are the protections in:
+buildtopia
+
+Are these locks in a PvP zone?
+No
+
+Are you the co-mayor or mayor?
+Yes
+
+What are the coordinates of this protection?
+/tppos 2199 64 Y5108 25 38
+(Admins: You can copy and paste this command, it includes pitch+yaw)
+
+What world is this protection in?
+rising
+
+Whose protections are these?
+Owner: kaimort7 (ecde31e6-139a-4ef3-b634-f719131ab721) 
+
+What kind of protections are these?
+Chest
+
+How many protections are we removing?
+One
+
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+
+Why do you want it gone/reasons?
+In the way/cleanup
+--------------------END AUTO-GENERATED TEXT---------------
+
+
+
+-----------------BEGIN AUTO-GENERATED TEXT----------------
+What is your In Game name: ScarabCoder
+
+What town are the protections in:
+buildtopia
+
+Are these locks in a PvP zone?
+No
+
+Are you the co-mayor or mayor?
+Yes
+
+What are the coordinates of this protection?
+/tppos 2198 64 Y5108 354 26
+(Admins: You can copy and paste this command, it includes pitch+yaw)
+
+What world is this protection in?
+rising
+
+Whose protections are these?
+Owner: kaimort7 (ecde31e6-139a-4ef3-b634-f719131ab721) 
+
+What kind of protections are these?
+Chest
+
+How many protections are we removing?
+One
+
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+
+Why do you want it gone/reasons?
+In the way/cleanup
+--------------------END AUTO-GENERATED TEXT---------------
+
+
+
+-----------------BEGIN AUTO-GENERATED TEXT----------------
+What is your In Game name: ScarabCoder
+
+What town are the protections in:
+darnassus
+
+Are these locks in a PvP zone?
+No
+
+Are you the co-mayor or mayor?
+Yes
+
+What are the coordinates of this protection?
+/tppos 2319 67 Y5090 178 0
+(Admins: You can copy and paste this command, it includes pitch+yaw)
+
+What world is this protection in?
+rising
+
+Whose protections are these?
+Owner: Roanmara (23af4cc3-17a7-48e0-a00e-4102673f71ed) 
+
+What kind of protections are these?
+Spruce Door
+
+How many protections are we removing?
+One
+
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+
+Why do you want it gone/reasons?
+In the way/cleanup
+--------------------END AUTO-GENERATED TEXT---------------
+
+
+
+-----------------BEGIN AUTO-GENERATED TEXT----------------
+What is your In Game name: ScarabCoder
+
+What town are the protections in:
+buildtopia
+
+Are these locks in a PvP zone?
+No
+
+Are you the co-mayor or mayor?
+Yes
+
+What are the coordinates of this protection?
+/tppos 2198 64 Y5108 0 32
+(Admins: You can copy and paste this command, it includes pitch+yaw)
+
+What world is this protection in?
+rising
+
+Whose protections are these?
+Owner: kaimort7 (ecde31e6-139a-4ef3-b634-f719131ab721) 
+
+What kind of protections are these?
+Chest
+
+How many protections are we removing?
+One
+
+Is this user banned from the server? If not have you tried contacting them about removing their things? Can you provide proof of this?
+Can't auto-fill
+
+Why do you want it gone/reasons?
+In the way/cleanup
+--------------------END AUTO-GENERATED TEXT---------------
+
+
+
+What is your in-game name?
+ ScarabCoder
+
+Have you read the in-depth instructions for this application?
+Yes
+
+Are we removing LWC Protections or traed signs?
+LWC Protection
+
+What town is this protection in?
+ They are in buildtopia application URL here
+
+ Whose is this protection?"
+ Owner: BuildsByGideon (0214e251-b01b-4c86-934c-35ec95ae724a) 
+
+Is the player who owns this inactive? Have you tried contacting them about removing the lock?
+Player inactive
+
+Where is this protection?
+/tppos 2155 64 5119 311 8
+(Note to admins: The above command can be copied and pasted ingame. Includes directional TP
+
+Is this protection in a PvP area?
+No
+
+Why are you requesting this to be removed?
+Protection is in the way and I am cleaning up
+--------------------END AUTO-GENERATED TEXT---------------
+
+
+
+What is your in-game name?
+ ScarabCoder
+
+Have you read the in-depth instructions for this application?
+Yes
+
+What world is this protection in:
+rising
+
+Are we removing LWC Protections or traed signs?
+LWC Protection
+
+What town is this protection in?
+ They are in buildtopia application URL here
+
+ Whose is this protection?"
+ Owner: rfmRuckys (65fcb4a5-c077-4d0c-a081-da60be4eed44) 
+
+Is the player who owns this inactive? Have you tried contacting them about removing the lock?
+Player inactive
+
+Where is this protection?
+/tppos 2248 66 5098 106 31
+(Note to admins: The above command can be copied and pasted ingame. Includes directional TP
+
+Is this protection in a PvP area?
+No
+
+Why are you requesting this to be removed?
+Protection is in the way and I am cleaning up
+--------------------END AUTO-GENERATED TEXT---------------
+
+
+
+What is your in-game name?
+ ScarabCoder
+
+Have you read the in-depth instructions for this application?
+Yes
+
+What world is this protection in:
+rising
+
+Are we removing LWC Protections or trade signs?
+LWC Protection
+
+What town is this protection in?
+They are in buildtopia application URL here
+
+Whose is this protection?
+Owner: rfmRuckys (65fcb4a5-c077-4d0c-a081-da60be4eed44) 
+
+Is the player who owns this inactive? Have you tried contacting them about removing the lock?
+Player inactive
+
+Where is this protection?
+/tppos 2249 66 5098 95 10
+(Note to admins: The above command can be copied and pasted ingame. Includes directional TP
+
+Is this protection in a PvP area?
+No
+
+Why are you requesting this to be removed?
+Protection is in the way and I am cleaning up
+--------------------END AUTO-GENERATED TEXT---------------
+
+
+
+What is your in-game name?
+ ScarabCoder
+
+Have you read the in-depth instructions for this application?
+Yes
+
+What world is this protection in:
+rising
+
+Are we removing LWC Protections or trade signs?
+LWC Protection
+
+What town is this protection in?
+They are in buildtopia application URL here
+
+Whose is this protection?
+Owner: ScarabCoder (012ca32d-ad51-4f34-b68c-7b69a7960bac) 
+
+Is the player who owns this inactive? Have you tried contacting them about removing the lock?
+Player inactive
+
+Where is this protection?
+/tppos 2228 64 5104 183 31
+(Note to admins: The above command can be copied and pasted ingame. Includes directional TP
+
+Is this protection in a PvP area?
+No
+
+Why are you requesting this to be removed?
+Protection is in the way and I am cleaning up
+--------------------END AUTO-GENERATED TEXT---------------
+
+
+

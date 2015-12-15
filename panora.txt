@@ -1,0 +1,42 @@
+//This will alert the user before starting taking the panorama.
+Log(&8[&bPanoramer&8]&aStarting. Please don't touch your mouse until the panorama is complete, otherwise it will not be 
+
+aligned correctly.)
+ 
+//This will make the script wait for 3 seconds before starting taking the panorama. It is used to give time to the user to 
+
+respond to the warning above.
+wait(3000ms)
+ 
+//This will automatically turn off the HUD.
+Press(F1)
+ 
+//This will turn the player around, wait 2 seconds, take a screenshot and wait 1/2 second before continuing.
+Look(0,0)
+Wait(2000ms)
+Key(Screenshot)
+Wait(500ms)
+ 
+//This will loop the Look, Wait and Key commands 3 times. "Do" is the beginning of the loop, and "Loop" is the end of it.
+Do(3)
+    Look(+90,0)
+    Wait(2000ms)
+    Key(Screenshot)
+    Wait(500ms)
+Loop
+ 
+Look(0,-90)
+Wait(2000ms)
+Key(Screenshot)
+Wait(500ms)
+ 
+Look(0,+180)
+Wait(2000ms)
+Key(Screenshot)
+Wait(500ms)
+ 
+//This will turn the HUD back on.
+Press(F1)
+ 
+//This will tell the user that the panorama was taken.
+Log(&8[&bPanoramer&8]&aComplete. The panorama has been saved to your screenhots folder.)

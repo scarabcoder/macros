@@ -1,0 +1,5 @@
+DO()
+IF(@#pump == 1)
+sprint()
+endif()
+loop()

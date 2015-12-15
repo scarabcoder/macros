@@ -1,0 +1,4 @@
+@&vars = "ScarabCoder, jaydwin, BlazeInfinite"
+REPLACE(@&vars, " ", "")
+&vargroups[] = split(",","%@&vars%");
+log(%&vargroups[0]%)

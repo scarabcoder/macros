@@ -1,0 +1,10 @@
+if(@#pump == 0)
+@#pump = 1
+LOG("Pumpkin Farming On")
+elseif(@#pump == 1)
+@#pump = 0
+LOG("Pumpkin Farming Off")
+ECHO("/sell pumpkin")
+else
+@#pump = 0
+endif()

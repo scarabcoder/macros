@@ -1,0 +1,14 @@
+$${
+if(%KEYNAME% == "onSendChatMessage")
+if(%CHAT% == "/lwc file")
+wait("1")
+
+@#blocklwc = 1
+@#click = 1
+log(&aLeft click the protection)
+echo("/lwc info")
+
+
+endif()
+endif()
+}$$

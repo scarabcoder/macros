@@ -1,0 +1,8 @@
+$${
+#slot = %INVSLOT%
+pick("wooden_sword")
+wait(50ms)
+key("attack")
+wait(100ms)
+slot(%#slot%)
+}$$

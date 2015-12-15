@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<variables>
+    <config name="@default">
+        <!-- KEY_V -->
+        <template id="47">
+            <int key="slot">4</int>
+        </template>
+        <!-- KEY_N -->
+        <template id="49">
+            <int key="i">109</int>
+            <int key="j">4</int>
+        </template>
+        <!-- EVENT_ONJOINGAME -->
+        <template id="1000">
+            <int key="correct">3</int>
+            <int key="j">4</int>
+            <string key="tcounter">0</string>
+            <string key="countstring">104</string>
+            <string key="timemin">234</string>
+        </template>
+        <!-- EVENT_ONSENDCHATMESSAGE -->
+        <template id="1019">
+            <int key="j">4</int>
+            <string key="tempam">5</string>
+            <string key="t1">/ch qm tr Selling &amp;7a &amp;7macro &amp;7that &amp;7generates &amp;7an &amp;7LWC &amp;7Removal &amp;7Request! &amp;7http://tinyurl.com/nb3lfy</string>
+            <string key="newad">$100 for every player you give an apartment to</string>
+            <array key="split" type="string">
+                <element pos="0">/ch</element>
+                <element pos="1">qm</element>
+                <element pos="2">tr</element>
+                <element pos="3">Selling</element>
+                <element pos="4">&amp;7a</element>
+                <element pos="5">&amp;7macro</element>
+                <element pos="6">&amp;7that</element>
+                <element pos="7">&amp;7generates</element>
+                <element pos="8">&amp;7an</element>
+                <element pos="9">&amp;7LWC</element>
+                <element pos="10">&amp;7Removal</element>
+                <element pos="11">&amp;7Request!</element>
+                <element pos="12">&amp;7http://tinyurl.com/nb3lfy</element>
+            </array>
+        </template>
+    </config>
+    <!-- ================================================================================ -->
+    <config name="Erep">
+        <!-- KEY_B -->
+        <template id="48">
+            <string key="inputcoords">Heello</string>
+            <string key="test">hi</string>
+        </template>
+    </config>
+</variables>

@@ -1,0 +1,23 @@
+$${
+look("180", "16")
+@#break = 1
+do()
+keydown("forward")
+wait(25)
+keyup("forward")
+look("+90", "+0")
+keydown("forward")
+wait(2)
+keyup("forward")
+look("+90", "+0")
+
+keydown("forward")
+wait(25)
+keyup("forward")
+look("-90", "+0")
+keydown("forward")
+wait(2)
+keyup("forward")
+look("-90", "+0")
+loop()
+}$$
